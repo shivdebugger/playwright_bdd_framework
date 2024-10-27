@@ -1,0 +1,15 @@
+{
+    "userNameField":{
+        "locator": "//input[@placeholder='Username']"
+    },
+    "userPasswordfield":{
+        "locator":"//input[@type='password']"
+    },
+    "loginBtn":{
+        "locator":"//button[@type='submit']"
+    },
+    "dashoardTxt":{
+        "locator":"//h6[contains(@class,'oxd-text oxd-text--h6')]"
+    }
+
+}
