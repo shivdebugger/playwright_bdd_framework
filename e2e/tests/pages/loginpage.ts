@@ -27,4 +27,5 @@ export default class LoginPage  extends BasePage{
        await this.verifyElementVisible(loginpageloc.dashoardTxt.locator);
     };
 
+    
 }

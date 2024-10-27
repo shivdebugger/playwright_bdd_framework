@@ -12,12 +12,11 @@ Given('User is on the login page', async function () {
 
 When('User enters valid credentials', async function () {
     await loginPage.enterLoginDetails();
-    
+
 });
 
 When('click the login button', async function () {
     await loginPage.clickLoginBtn();
-    //loginPage.alert();
 });
 
 Then('User should be redirected to the dashboard', async function () {

@@ -11,5 +11,4 @@
     "dashoardTxt":{
         "locator":"//h6[contains(@class,'oxd-text oxd-text--h6')]"
     }
-
 }

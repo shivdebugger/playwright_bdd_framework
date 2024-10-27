@@ -25,4 +25,5 @@ export default class BasePage{
         const element = this.page.locator(selector);
         await expect(element).toBeVisible();
     }
+    
 }
