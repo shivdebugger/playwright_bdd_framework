@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<testsuite failures="1" skipped="0" name="cucumber-js" time="10.424450998" tests="1">
+  <testcase classname="Login Functionality" name="Successful login test" time="10.424450998">
+    <failure type="Error" message="[31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m&#xA;&#xA;Locator: locator('//h[contains(@class,\'oxd-text oxd-text--h\')]')&#xA;Expected: visible&#xA;Received: &lt;element(s) not found>&#xA;Call log:&#xA;  [2m- locator._expect with timeout 5000ms[22m&#xA;[2m  - waiting for locator('//h[contains(@class,\'oxd-text oxd-text--h\')]')[22m&#xA;"><![CDATA[Error: [31mTimed out 5000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+Locator: locator('//h[contains(@class,\'oxd-text oxd-text--h\')]')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  [2m- locator._expect with timeout 5000ms[22m
+[2m  - waiting for locator('//h[contains(@class,\'oxd-text oxd-text--h\')]')[22m
+
+    at Proxy.<anonymous> (C:\Users\ABCD\E2E_BDD\node_modules\playwright\lib\matchers\expect.js:225:37)
+    at LoginPage.<anonymous> (C:\Users\ABCD\E2E_BDD\e2e\tests\pages\basepage.ts:26:31)
+    at C:\Users\ABCD\E2E_BDD\e2e\tests\pages\basepage.ts:8:71
+    at __awaiter (C:\Users\ABCD\E2E_BDD\e2e\tests\pages\basepage.ts:4:12)
+    at LoginPage.verifyElementVisible (C:\Users\ABCD\E2E_BDD\e2e\tests\pages\basepage.ts:33:16)
+    at LoginPage.<anonymous> (C:\Users\ABCD\E2E_BDD\e2e\tests\pages\loginpage.ts:27:19)
+    at C:\Users\ABCD\E2E_BDD\e2e\tests\pages\loginpage.ts:31:71]]></failure>
+    <system-out><![CDATA[Given User is on the login page...........................................passed
+When User enters valid credentials........................................passed
+When click the login button...............................................passed
+Then User should be redirected to the dashboard...........................failed]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,4 +1,4 @@
-import { setDefaultTimeout, Before, After, BeforeAll, AfterAll } from "@cucumber/cucumber"
+import { setDefaultTimeout, Before, After, BeforeAll, AfterAll, Status } from "@cucumber/cucumber"
 import { Browser, BrowserContext, chromium,firefox,webkit, Page } from "@playwright/test"
 import dotenv from "dotenv";
 
@@ -34,9 +34,16 @@ BeforeAll(async function (){
 Before(async function () {
   bCtx = await browser.newContext({ viewport: null, javaScriptEnabled: true });
   page = await bCtx.newPage();
+
 });
 
-After(async function () {
+After(async function ({pickle,result}) {
+  if(result?.status=="FAILED"){
+    const img = await page.screenshot({
+       path:"screenshots/"+pickle.name+".png"
+    });
+    this.attach(img,'image/png');
+  }
   await page.close();
   await bCtx.close();
   

@@ -8,6 +8,11 @@
     "requireModule":[
         "ts-node/register"
     ],
-    "formate":[]        
+    "format":[["progress"],
+        ["json","reports/cucumber_report.json"],
+         ["junit","reports/junit.xml"],
+         ["html","reports/logs.html"]
+    ] 
+
     }
 }
