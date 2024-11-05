@@ -34,7 +34,7 @@ BeforeAll(async function (){
 Before(async function () {
   bCtx = await browser.newContext({ viewport: null, javaScriptEnabled: true });
   page = await bCtx.newPage();
-
+  //await page.goto(process.env.app_url!); 
 });
 
 After(async function ({pickle,result}) {

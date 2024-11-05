@@ -24,6 +24,7 @@ export default class BasePage{
     async verifyElementVisible(selector: string) {
         const element = this.page.locator(selector);
         await expect(element).toBeVisible();
+       
     }
     
 }

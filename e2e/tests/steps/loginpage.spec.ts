@@ -1,7 +1,7 @@
-import { Given, When, Then, setDefaultTimeout, Before, After } from "@cucumber/cucumber"
-import { expect } from "@playwright/test"
+import { Given, When, Then } from "@cucumber/cucumber"
 import { getPage } from "../../../corelib/corelib.spec";
 import LoginPage from "../pages/loginpage";
+import { expect } from "@playwright/test";
 
 let loginPage: LoginPage;
 
@@ -10,15 +10,21 @@ Given('User is on the login page', async function () {
     await loginPage.goToLoginPage();
 });
 
-When('User enters valid credentials', async function () {
-    await loginPage.enterLoginDetails();
+When('the user enters {string} and {string}', async function (username: string, password: string) {
+    await loginPage.enterLoginDetails(username,password);
 
 });
 
-When('click the login button', async function () {
+When('the user click on login button', async function () {
     await loginPage.clickLoginBtn();
 });
 
-Then('User should be redirected to the dashboard', async function () {
+Then('the user should see the dashboard', async function () {
     await loginPage.isUserLoggedIn();
 });
+
+Then('the user should see the {string}', async function (expectedElement: string) {
+    await loginPage.verifyLoginResult(expectedElement);
+    
+});
+

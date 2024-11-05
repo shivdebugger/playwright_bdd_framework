@@ -1,14 +1,26 @@
 {
     "userNameField":{
-        "locator": "//input[@placeholder='Username']"
+        "locator": "//input[@id='auth_user_username']"
     },
     "userPasswordfield":{
-        "locator":"//input[@type='password']"
+        "locator":"//input[@id='auth_user_password']"
     },
     "loginBtn":{
-        "locator":"//button[@type='submit']"
+        "locator":"//button[@id='login_button']"
     },
     "dashoardTxt":{
-        "locator":"//h6[contains(@class,'oxd-text oxd-text--h6')]"
+        "locator":"//h2[normalize-space(text())='overview']"
+    },
+    "rememberMeChkBox" : { 
+        "locator" : "//input[@id='auth_user_remember_me']"
+    },
+    "lostPasswordbtn" :{
+        "locator" :"//a[contains(text(),'Lost Password')]"
+    },
+    "forgotPasswordbtn" :{
+        "locator" :"//a[contains(text(),'Forgot Username')]"
+    },
+    "invalidLoginError": {
+        "locator": "//div[normalize-space(text())='Invalid login']"
     }
 }
