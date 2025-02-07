@@ -1,0 +1,18 @@
+{
+    "default":{
+        "dryRun":false,
+        "formatOptions":{"snippetInterface": "async-await"
+    },
+    "paths":["e2e/tests/features/**/*.feature"],
+    "require":["e2e/tests/steps/**/*.ts","e2e/corelib/corelib.spec.ts"],
+    "requireModule":[
+        "ts-node/register"
+    ],
+    "format":[["progress"],
+        ["json","reports/cucumber_report.json"],
+         ["junit","reports/junit.xml"],
+         ["html","reports/logs.html"]
+    ] 
+
+    }
+}

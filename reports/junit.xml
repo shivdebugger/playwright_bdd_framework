@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<testsuite failures="0" skipped="0" name="cucumber-js" time="15.234197395" tests="2">
+  <testcase classname="Login Functionality" name="Login with different credentials" time="5.987142996999999">
+    <system-out><![CDATA[Given User is on the login page...........................................passed
+When the user enters "testuser1" and "xxx"................................passed
+When the user click on login button.......................................passed
+Then the user should see the "overview"...................................passed]]></system-out>
+  </testcase>
+  <testcase classname="Login Functionality" name="Login with different credentials [1]" time="9.247054398000001">
+    <system-out><![CDATA[Given User is on the login page...........................................passed
+When the user enters "test1234" and "12345"...............................passed
+When the user click on login button.......................................passed
+Then the user should see the "Invalid login"..............................passed]]></system-out>
+  </testcase>
+</testsuite>

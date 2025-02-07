@@ -1,0 +1,171 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-functionality;login-with-different-credentials",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Login with different credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 681317500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2801916899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters \"testuser1\" and \"xxx\"",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 368156100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user click on login button",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1269340399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should see the \"overview\"",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 714949900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151462199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-functionality;login-with-different-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Login with different credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 595259599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User is on the login page",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2640003300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters \"test1234\" and \"12345\"",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216933400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "the user click on login button",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 674615499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should see the \"Invalid login\"",
+            "match": {
+              "location": "e2e\\tests\\steps\\loginpage.spec.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5032045500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88197100
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-functionality",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login Functionality",
+    "tags": [],
+    "uri": "e2e\\tests\\features\\loginpage.feature"
+  }
+]
